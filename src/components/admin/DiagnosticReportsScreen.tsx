@@ -412,13 +412,13 @@ export default function DiagnosticReportsScreen() {
                   </label>
                   <div className="relative">
                     <input
-                      type="tel"
-                      value={customerLookup.phone}
+                          setUploadData({
+                            ...uploadData,
                       onChange={(e) => {
                         const phone = e.target.value;
                         setCustomerLookup(prev => ({ ...prev, phone }));
                         if (phone.length >= 10) {
-                          handlePhoneLookup(phone);
+                          });
                         }
                       }}
                       placeholder="+971 50 123 4567"
