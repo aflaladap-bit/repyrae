@@ -126,11 +126,6 @@ export default function ServicesScreen({ onBack, initialAction }: ServicesScreen
     setActiveSection('checkout');
   };
 
-  const handleViewGarage = (garageId: string) => {
-    setSelectedGarageId(garageId);
-    setShowGarageProfile(true);
-  };
-
   if (activeSection === 'checkout') {
     return (
       <CheckoutScreen 
