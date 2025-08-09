@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import { Calendar, Wrench, AlertTriangle, CheckCircle, Clock, FileText, Shield, Link, ExternalLink, Copy, Search, QrCode } from 'lucide-react';
-import { DiagnosisReport } from '../types';
+import { Calendar, Wrench, AlertTriangle, CheckCircle, Clock, FileText, Shield, Link, ExternalLink, Copy } from 'lucide-react';
 
 interface DiagnosticTimelineScreenProps {
   onBack: () => void;

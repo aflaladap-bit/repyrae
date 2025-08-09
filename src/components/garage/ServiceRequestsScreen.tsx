@@ -305,11 +305,6 @@ export default function ServiceRequestsScreen() {
     setShowJobCompletion(requestId);
   };
 
-  const handleViewGarage = (garageId: string) => {
-    // Implementation for viewing garage details
-    console.log('Viewing garage:', garageId);
-  };
-
   const handleJobCompletionSubmit = () => {
     // Here you would submit the job completion data and warranty info
     console.log('Submitting job completion:', jobCompletionData);
