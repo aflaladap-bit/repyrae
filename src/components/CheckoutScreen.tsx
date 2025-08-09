@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from './Header';
-import { MapPin, Clock, CreditCard, Star, Shield, CheckCircle, AlertTriangle, Car, User, Phone, Truck, Home, Building2 } from 'lucide-react';
+import { MapPin, Clock, CreditCard, Star, Shield, CheckCircle, AlertTriangle, Car, User, Truck, Home, Building2 } from 'lucide-react';
 
 interface CheckoutScreenProps {
   onBack: () => void;

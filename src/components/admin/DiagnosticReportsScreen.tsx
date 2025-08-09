@@ -170,7 +170,7 @@ export default function DiagnosticReportsScreen() {
   const handlePhoneLookup = async (phone: string) => {
     if (phone.length < 10) return;
     
-    setCustomerLookup({ phone, isLoading: true, found: false });
+    setCustomerLookup({ phone: phone, isLoading: true, found: false });
     
     // Simulate API call delay
     setTimeout(() => {
@@ -191,15 +191,15 @@ export default function DiagnosticReportsScreen() {
         setCustomerLookup({ phone, isLoading: false, found: true });
       } else {
         // Clear data if not found
-        setUploadData(prev => ({
-          ...prev,
+        setUploadData({
+          ...uploadData,
           customerName: '',
           customerPhone: phone,
           vehicleMake: '',
           vehicleModel: '',
           vehicleYear: '',
           vehiclePlate: ''
-        }));
+        });
         setCustomerLookup({ phone, isLoading: false, found: false });
       }
     }, 1000);

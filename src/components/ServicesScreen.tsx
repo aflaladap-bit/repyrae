@@ -200,7 +200,6 @@ export default function ServicesScreen({ onBack, initialAction }: ServicesScreen
                     ? `Completed at ${work.completedAt}`
                     : `Est. completion: ${work.estimatedCompletion}`
                   }
-                  onClick={() => handleViewGarage(quote.id)}
                 </span>
                 <button className="text-primary font-medium">
                   View Garage
@@ -431,7 +430,10 @@ export default function ServicesScreen({ onBack, initialAction }: ServicesScreen
             <p className="text-gray-600 text-sm mb-4">{quote.description}</p>
             
             <div className="flex space-x-3">
-              <button className="flex-1 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm">
+              <button 
+                onClick={() => handleViewGarage(quote.id)}
+                className="flex-1 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm"
+              >
                 View Garage
               </button>
               <button 
