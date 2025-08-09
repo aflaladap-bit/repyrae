@@ -29,7 +29,7 @@ export default function RoleSelector({ onRoleSelect }: RoleSelectorProps) {
       title: 'Administrator',
       subtitle: 'Platform management and oversight',
       icon: Shield,
-      color: 'bg-gradient-to-br from-purple-500 via-purple-600 to-pink-600',
+      color: 'bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700',
       description: 'Manage users, garages, and platform operations'
     }
   ];
